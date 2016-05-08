@@ -3,6 +3,15 @@ header{
     height: 900px;
     width:1440px;
 }
+
+#Menu{
+    position: relative;
+    top: 30px;
+}
+.logo{
+    position: relative;
+    left: 30px;
+}
 #CallAction{
     height:500px;
     width:1440px;
@@ -16,6 +25,7 @@ header{
 #PriceTables{
     height: 748px;
     width: 1440px;
+    background-color: #F4F4F4;
 }
 #Subscribe{
     height:386px;
@@ -32,6 +42,11 @@ footer{
 
 .getfree{
     display: inline-block;
+    font-family: .AppleSystemUIFont;
+    font-size: 16px;
+    color: #86939E;
+    position: relative;
+    right: 50px;
 }
 .wrapper0{
     text-align: right;
@@ -40,6 +55,10 @@ footer{
     display: inline-block;
     border: 2px solid #E1E8EE;
     border-radius: 6px;
+    background-color: white;
+    position: relative;
+    right: 30px;
+    
     
 }
 
@@ -80,6 +99,12 @@ h1{
 .containhead{
     position: relative;
     top: 80px;
+}
+.buyNow1{
+    font-family: .AppleSystemUIFont;
+    font-size: 16px;
+    color: #86939E;
+    
 }
 .BuyNow0{
     /* Buy now: */
@@ -161,9 +186,16 @@ h1{
 
 #icon{
     float:left;
+    position: relative;
+    top: 140px;
+    left: 150px;
 }
 #Userpic{
     float:left;
+    position: relative;
+    top: 130px;
+    left: 230px;
+    
 }
 
 .quote2left{
@@ -174,16 +206,24 @@ h1{
     letter-spacing: 0px;
     line-height: 46px;
     text-align: left;
+    position: relative;
+    top:80px;
+    left: 260px;
+
 
 }
 
-#h3left{
+#hleft{
     /* Irina Bykova: */
     font-family: .AppleSystemUIFont;
     font-size: 18px;
     color: #43484D;
     letter-spacing: 0px;
     line-height: 25px;
+    text-align: left;
+    position: relative;
+    top: 50px;
+    left:400px;
 }
 
 #bodygrey{
@@ -193,6 +233,11 @@ h1{
     color: #86939E;
     letter-spacing: 0px;
     line-height: 25px;
+    text-align: left;
+    position: relative;
+    top: 50px;
+    left: 400px;
+
 }
 
 .subheader1{
@@ -233,3 +278,27 @@ h1{
     top: 200px;
 }
 
+.quotecontain{
+    margin: 0 auto;
+}
+
+/*Boostrap*/
+
+.glyphicon.glyphicon-chevron-left{
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+    right: 20px;
+}
+
+.glyphicon.glyphicon-chevron-right{
+    font-size: 50px;
+    position: relative;
+    top: -40px;
+    left: 1390px;
+
+}
+
+.text {
+    margin-left: 120px;
+}

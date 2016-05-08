@@ -4,17 +4,51 @@
         <meta charset="UTF-8">
             <title>CodingTest</title>
             <link rel="stylesheet" type ="text/css" href="style.css"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <scipt src= "http://code.jquery.com/jquery-2.2.0.min.js"></script>
             <script src="canvasjs-1.8.0/canvasjs.min.js"></script>
             <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
-            <scipt src= "http://code.jquery.com/jquery-2.2.0.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+            
+
             <script type="text/javascript">
-                $.getJSON('data.json', function(data){
-                          console.log('It worked");')
-                          
-                          });
+                window.onload = function(){
+                    
+                    var chart = new CanvasJS.Chart("mychart",{
+                                                   
+                                                   data:[
+                                                   
+                                                   {
+                                                   
+                                                         type: "line",
+                                                         dataPoints: []
+                                                         
+                                                         
+                                                         
+                                                   
+                                                   }
+                                                   
+                                                   
+                                                   ]
+                                                   
+                                                   
+                                                   });
+                                                   
+                                                   $.ajax({
+                                                          dataType: "jsonp",
+                                                          url: "https://www.dropbox.com/s/gnjm36ug29lqnz9/chart.json?dl=0",
+                                                          }).done(function(data){
+                                                                  for (var i=0; i<data.length; i++){
+                                                                  dataPoints.push({ label: data[i].month, y: data[i].money});
+                                                                  }
+                                                                  
+                                                                  chart.options.data[0].dataPoints = dataPoints;
+                                                                  chart.render();
+                                                                  
+                                                                  }
+                                                                  );
+                }
             </script>
     </head>
     
@@ -57,7 +91,7 @@
             <div id="mychart" style="height:321px; width:100%;"></div>
             
         </header>
-        <hr>
+        <hr width:"100%">
         
         <div id="CallAction">
             <div id="background0">
@@ -77,21 +111,18 @@
                 
             </div>
         </div>
-        <hr>
+        <hr width:"100%">
         <div id="Textimonials">
-            <div class="container">
-            <div class="pic">
-            <div id="icon">
-                <img src="images/Icon.png" alt="icon">
-            </div>
+            
+            <span class="glyphicon glyphicon-chevron-left"></span>
             <div id="Userpic">
                 <img src="images/userpic.png" alt="userpic"/>
             </div>
-            </div>
-            <div class="quotecontainer">
+            <div class ="quotecontain">
             <div class="quote2left">
-                “Just started using awesome Module. Great way to boost the hard <br>designing or prototyping process. Also a perfect tool for creative <br>studios and freelancers”
+                “Just started using awesome Module. Great way to boost the hard <br>designing or prototyping process. Also a perfect tool for creative  <br> <div class="text">studios and freelancers”</div>
             </div>
+            <span class="glyphicon glyphicon-chevron-right"></span>
             <div id="hleft">
                 Irina Bykova
             </div>
@@ -100,10 +131,8 @@
                 team
             </div>
             </div>
-            
-            </div>
         </div>
-        <hr>
+        <hr width:"100%">
         <div id="PriceTables">
             <h1>Choose Your License</h1>
             
@@ -181,7 +210,7 @@
                 
             </div>
         </div>
-        <hr>
+        <hr width:"100%">
         
         <div id="Subscribe">
             <div class="background3">
