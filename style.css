@@ -1,0 +1,235 @@
+
+header{
+    height: 900px;
+    width:1440px;
+}
+#CallAction{
+    height:500px;
+    width:1440px;
+}
+
+#Textimonials{
+    height:400px;
+    width:1440px;
+    
+}
+#PriceTables{
+    height: 748px;
+    width: 1440px;
+}
+#Subscribe{
+    height:386px;
+    width: 1440px;
+}
+footer{
+    height:100px;
+    width:1440px;
+}
+.logo{
+    float: left;
+    display: inline-block;
+}
+
+.getfree{
+    display: inline-block;
+}
+.wrapper0{
+    text-align: right;
+}
+.whitebutton{
+    display: inline-block;
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    
+}
+
+h1{
+    font-family: .AppleSystemUIFont;
+    font-size: 52px;
+    color: #43484D;
+    letter-spacing: -2px;
+    line-height: 58px;
+    text-align: center;
+}
+
+#subheader{
+    font-family: .AppleSystemUIFont;
+    font-size: 22px;
+    color: #717D8A;
+    letter-spacing: 0px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+.button0{
+    /* Button: */
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    width: 193px;
+    height: 60px;
+    background-color: white;
+    
+    
+}
+
+.containhead{
+    position: relative;
+    top: 80px;
+}
+.BuyNow0{
+    /* Buy now: */
+    font-family: .AppleSystemUIFont;
+    font-size: 16px;
+    color: #86939E;
+    letter-spacing: 0px;
+    line-height: 16px;
+    display: inline-block;
+    position:relative;
+    right:17px;
+}
+
+
+.euro{
+    /* €23: */
+    font-family: .AppleSystemUIFont;
+    font-size: 16px;
+    color: #86939E;
+    letter-spacing: 0px;
+    line-height: 16px;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+}
+/*h5{*/
+/*    font-family: .AppleSystemUIFont;*/
+/*    font-size: 22px;*/
+/*    color: #5E6977;*/
+/*    letter-spacing: 0px;*/
+/*    line-height: 32px;*/
+/*}*/
+
+#quote2center{
+    
+    font-family: .SFNSDisplay-Regular;
+    font-size: 32px;
+    color: #43484C;
+    letter-spacing: 0px;
+    line-height: 46px;
+    text-align: center;
+    
+}
+
+
+.button2{
+    /* Button: */
+    background: #7DC855;
+    border-radius: 6px;
+    height:60px;
+    width: 190px;
+    position: relative;
+    top: 40px;
+}
+
+
+#BuyNow{
+    font-family: .AppleSystemUIFont;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    line-height: 16px;
+}
+
+#background0{
+
+    background: #FFFFFF;
+    position: relative;
+    top: 30%;
+
+
+}
+
+.container{
+    position: relative;
+    top: 30%;
+}
+
+#icon{
+    float:left;
+}
+#Userpic{
+    float:left;
+}
+
+.quote2left{
+    
+    font-family: .AppleSystemUIFont;
+    font-size: 32px;
+    color: #43484C;
+    letter-spacing: 0px;
+    line-height: 46px;
+    text-align: left;
+
+}
+
+#h3left{
+    /* Irina Bykova: */
+    font-family: .AppleSystemUIFont;
+    font-size: 18px;
+    color: #43484D;
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+#bodygrey{
+    /* Photographer, works : */
+    font-family: .AppleSystemUIFont;
+    font-size: 16px;
+    color: #86939E;
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+.subheader1{
+    /* We push ourselves to: */
+    font-family: .AppleSystemUIFont;
+    font-size: 22px;
+    color: #5E6977;
+    letter-spacing: 0px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.background3{
+    /* Background: */
+    background: #FFFFFF;
+}
+
+.copyright{
+    text-align: right;
+}
+
+.wrapper3{
+    text-align: center;
+}
+
+.input{
+    /* Input: */
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+}
+
+.button5{
+    /* Button: */
+    background: #7DC855;
+}
+
+#containerchart{
+    top: 200px;
+}
+
