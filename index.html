@@ -37,7 +37,7 @@
                                                    
                                                    $.ajax({
                                                           dataType: "jsonp",
-                                                          url: "https://www.dropbox.com/s/gnjm36ug29lqnz9/chart.json?dl=0",
+                                                          url: "http://okus5416.github.io/codingtest/data.json",
                                                           }).done(function(data){
                                                                   for (var i=0; i<data.length; i++){
                                                                   dataPoints.push({ label: data[i].month, y: data[i].money});

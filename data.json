@@ -1,5 +1,5 @@
-{
-  "numbers": [
+
+
     {
       "month": "January",
       "money": 1000,
@@ -165,10 +165,3 @@
       "views":4893,
       "share":238
     }
-  ],
-  "obj": {
-    "number": 1.2345e-6,
-    "enabled": true
-  },
-  "message": "Strings have to be in double-quotes."
-}
