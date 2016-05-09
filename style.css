@@ -48,6 +48,25 @@ header{
     width: 1440px;
     background-color: #F4F4F4;
 }
+.chartcontainer{
+    position: relative;
+    top: 300px;
+}
+
+.dragtravel{
+    font-family: .AppleSystemUIFont;
+    font-size: 14px;
+    color: #86939E;
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+
+.dragbutton{
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
 .chooseYour{
     position: relative;
     top: 80px;
