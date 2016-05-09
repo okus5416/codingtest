@@ -13,42 +13,68 @@
             
 
             <script type="text/javascript">
-                window.onload = function(){
-                    
-                    var chart = new CanvasJS.Chart("mychart",{
-                                                   
-                                                   data:[
-                                                   
-                                                   {
-                                                   
-                                                         type: "line",
-                                                         dataPoints: []
-                                                         
-                                                         
-                                                         
-                                                   
-                                                   }
-                                                   
-                                                   
-                                                   ]
-                                                   
-                                                   
-                                                   });
-                                                   
-                                                   $.ajax({
-                                                          dataType: "jsonp",
-                                                          url: "http://okus5416.github.io/codingtest/data.json",
-                                                          }).done(function(data){
-                                                                  for (var i=0; i<data.length; i++){
-                                                                  dataPoints.push({ label: data[i].month, y: data[i].money});
-                                                                  }
-                                                                  
-                                                                  chart.options.data[0].dataPoints = dataPoints;
-                                                                  chart.render();
-                                                                  
-                                                                  }
-                                                                  );
-                }
+                
+                $(document).ready(function(){
+                                  var chart = new CanvasJS.Chart("mychart",{
+                                                                 
+                                                                 title:{
+                                                                 text: "Coding Test Chart"
+                                                                 },
+                                                                 data: [
+                                                                 {
+                                                                        type: "line",
+                                                                        dataPoints:[
+                                                                                    { label: "Jan", y: 18},
+                                                                                    {label:"Feb", y:29},
+                                                                                    {label: "Mar", y: 44},
+                                                                                    {label: "Apr", y: 11},
+                                                                                    {label: "Jun", y:50}
+                                                                                    
+                                                                        
+                                                                        
+                                                                        
+                                                                        ]
+                                                                 }
+                                                                 
+                                                                 ]
+                                                                 
+                                                                 
+                                                                 });
+                                  chart.render();
+                                  
+                                  });
+                
+                
+                
+                
+<!--                 $(document).ready(function(){-->
+<!--                    var chart = new CanvasJS.Chart("mychart",{-->
+<!--                                                   -->
+<!--                                                   data: [{-->
+<!--                                                   -->
+<!--                                                          type: "line",-->
+<!--                                                          dataPoints:[]-->
+<!--                                                        -->
+<!--                                                   }-->
+<!--                                                   ]-->
+<!--                                                   });-->
+<!--                                                   $.ajax({-->
+<!--                                                          url: "http://okus5416.github.io/codingtest/data.json"-->
+<!--                                                          }).done(function(data){-->
+<!--                                                             for (var i=0; i<data.length; i++){-->
+<!--                                                             dataPoints.push({ label: data[i].month, y: data[i].money});-->
+<!--                                                             }-->
+<!--                                                             -->
+<!--                                                             -->
+<!--                                                             -->
+<!--                                                             -->
+<!--                                                             });-->
+<!--                                                             chart.render();-->
+<!--                                   });-->
+<!---->
+<!---->
+<!---->
+
             </script>
     </head>
     
@@ -320,6 +346,10 @@
                                                   
                                                   });
                               $(".logo").fadeToggle(1000).fadeToggle(1000).fadeToggle(1000).fadeToggle(1000);
+                              
+                              $(".button0").click(function(){
+                                                  $(this).fadeToggle().fadeToggle();
+                                                  });
 
                               });
         </script>
